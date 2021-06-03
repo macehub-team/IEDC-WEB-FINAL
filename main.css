@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-rows: 100vh 110vh 100vh 105vh 90vh 10vh;
+    grid-template-columns: 100vw;
+    font-size: 3.25vw;
+}
+
+/*    navbar   */
+/*    ------   */
+/*    ------   */
+#navbar{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 2vh;
+    color: #F2F2F2;
+    font-size: 1em;
+    font-weight: 600;
+    backdrop-filter: blur(8px);
+}
+#navbar,#navlinks,#navlinks a{
+    transition: 0.15s ease-in;
+}
+/*-----------------*/
+.nav-closed{
+    height: 5vh;
+}
+.nav-opened{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+.nav-opened #logo{
+    display: block;
+}
+#logo{
+    display: none;
+    height: 10vh;
+    width: 10vh;
+    margin-left: 1vh;
+    margin-right: 5vh;
+}
+.navlink-closed{
+    height: 5vh;
+    width: 5vh;
+}
+.navlink-closed a:not(:first-child) {display: none;}
+
+.navlink-opened{
+    height: 100vh;
+    width: 70vw;
+}
+.navlink-opened a:first-child {transform: rotate(90deg);}
+/*-----------------*/
+
+#navlinks{
+    margin-left: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#navlinks a{
+    color: #F2F2F2;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+}
+.fa-instagram,.fa-linkedin-in,.fa-envelope{
+    color: #F2F2F2;
+    margin: 1vw;
+    text-decoration: none;
+}
+/*    ------   */
+/*    ------   */
+/*    ------   */
+
+
+/*    hero page   */
+/*    ---------   */
+/*    ---------   */
+.hero{
+    z-index: -1;
+    background: linear-gradient(#15151C, #353155);
+    overflow: hidden;
+}
+.heroText{
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    margin-bottom: 20vh;
+    margin-left: 5vw;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+#animText{
+    color: #F2F2F2;
+    font-size: 2em;
+    font-weight: 600;
+    text-shadow: -10px 10px 0px rgba(255, 255, 255, 0.1);
+}
+#animText b{
+    font-size: 2em;
+}
+/*    background   */
+.background{
+    z-index: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+#hBush,#hTower,#hSea,#hMount,#sky,#hOverlay,#hRocket{
+    position: absolute;
+}
+#hMount{
+    bottom: 30vw;
+}
+#hSea{
+    bottom: 0;
+    height: 30vw;
+}
+#hTower{
+    bottom: 0;
+    height: 45vh;
+    right: 20vw;
+}
+#hBush{
+    bottom: 0;
+    left: 0;
+    height: 30vh;
+}
+#hOverlay{
+    width: 100vw;
+    bottom: 0;
+}
+#sky{
+    top: -10vh;
+    display: block;
+    width: 170vw;
+}
+#hRocket{
+    bottom: 1vh;
+    height: 30vh;
+}
+/*    ---------   */
+/*    ---------   */
+/*    ---------   */
+
+
+/*    events page   */
+/*    ---------   */
+/*    ---------   */
+.events{
+    background-image: url(./files/eventbg.png);
+    background-size: 250vw 110vh;
+    background-repeat: no-repeat;
+    padding-top: 5vh;
+}
+.event{
+    padding-left: 5vw;
+    display: flex;
+}
+
+.eventName{
+    margin-left: 5vw;
+}
+
+.eventText{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #F2F2F2;
+}
+
+.progressBar{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #F2F2F2;
+    height: 5vh;
+    width: 50vw;
+    margin-top: 5vh;
+}
+
+.progressBar hr{
+    width: 40vw;
+    height: 2px;
+    background: #A6A6A6;
+    opacity: 0.3;
+    border: none;
+}
+
+#progress{
+    width: 4vw;
+    background: #F2F2F2;
+    opacity: 1;
+    transition: 0.5s ease-in;
+}
+
+.event p{
+    color: #a0a0a0;
+    width: 85vw;
+    line-height: 1.5em;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1.05em;
+}
+.event a{
+    color: #dfdfdf;
+}
+p b{
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+.nButton{
+    color: #F2F2F2;
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+    background: #a6a6a608;
+    border: 2px solid #a0a0a0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 3vw;
+    transition: 0.1s ease-in;
+    outline: none;
+    cursor: pointer;
+}
+.nButton:active{
+    background: #1f1f1f30;
+    box-shadow: inset 0px 0px 10px #1b1c1e40;
+    border: 2px solid #808080ab;
+}
+#eP2,#eP3,#eN2,#eN3{
+    display: none;
+}
+.eventGallery{
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.eventGallery img{
+    width: 47%;
+    height: 30%;
+    border: 2px solid #eeeeee30;
+    padding: 5px;
+}
+#eG1,#eG2,#eG3{
+    display: none;
+}
+#eG1 img{
+    height: 65%;
+    width: 95%;
+}
+#eG3 img{
+    height: 40%;
+    width: 70%;
+}
+#eG2 img{
+    height: 75%;
+    width: 95%;
+}
+/*    ---------   */
+/*    ---------   */
+/*    ---------   */
+
+
+
+/*    fablab page   */
+/*    -----------   */
+/*    -----------   */
+
+.fablab{
+    background-image: url(./files/fabbg.png);
+    background-size: 175vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.fabgallery{
+    width: 35vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.fababout{
+    width: 65vw;
+    padding: 3vw;
+}
+.fababout p{
+    color: #a0a0a0;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 1.025em;
+}
+
+.fabgallery img{
+    width: 30vw;
+    border: 3px solid #eeeeee30;
+    padding: 10px;
+    margin-left: 2vw;
+}
+.hid{
+    display: none;
+}
+/*    -----------   */
+/*    -----------   */
+/*    -----------   */
+
+
+/*    members   */
+/*    -------   */
+/*    -------   */
+.members{
+    background-image: url(./files/memberbg.png);
+    background-size: 250vw 105vh;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 8fr;
+}
+.memberAbout{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    align-items: center;
+}
+.memberAbout .nButton{
+    margin-top: 0;
+}
+.memberAbout text{
+    color: #a0a0a0;
+}
+.memberList{
+    padding-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 3vw;
+}
+.m2{
+    display: none;
+}
+.member{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    color: #a0a0a0;
+}
+.member img{
+    margin-right: 10px;
+    padding: 5px;
+    height: 65px;
+    width: 65px;
+    border-radius: 70px;
+    border: 2px solid #808080bb;
+    box-shadow: 0px 0px 25px #1b1c1e, 0px 0px 60px #15151C5e;
+}
+.member p{
+    font-size: 0.8em;
+}
+/*    -------   */
+/*    -------   */
+/*    -------   */
+
+
+/*    Alumini   */
+/*    -------   */
+/*    -------   */
+
+.alumini{
+    background-image: url(./files/aluminbg.png);
+    background-size: 300vw 90vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alumini p{
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #EAEAEAEA;
+    text-align: center;
+    line-height: 3em;
+    text-shadow: 5px 5px 20px #3e004c;
+    padding: 5vw;
+}
+
+/*    -------   */
+/*    -------   */
+/*    -------   */
+
+
+
+/*    footer   */
+/*    -------   */
+/*    -------   */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1b1c1e;
+}
+
+/*    -------   */
+/*    -------   */
+/*    -------   */
+
+@media only screen and (min-width: 426px) {
+
+    body{
+        font-size: 1.70vw;
+        grid-template-rows: 100vh 115vh 100vh 100vh 90vh 10vh;
+    }
+    .heroText{
+        margin-left: auto;
+        margin-bottom: auto;
+    }
+    .navlink-closed{
+        width: 70vw;
+    }
+    #navlinks{
+        flex-direction: row;
+    }
+    .navlink-closed a:first-child {display: none; }
+    .navlink-closed a:not(:first-child) {display: block;}
+    #animText{
+        font-size: 2.5em;
+    }
+    #animText b{
+        font-size: 2.75em;
+    }
+    #sky{
+        width: 100vw;
+    }
+    #hMount{
+        bottom: 20vw;
+    }
+    #hSea{
+        height: 20vw;
+    }
+    #hBush{
+        height: 35vw;
+    }
+    #hTower{
+        height: 55vh;
+        right: 25vw;
+    }
+    #hRocket{
+        bottom: 1vh;
+        height: 40vh;
+    }
+    .events{
+        background-size: 150vw 115vh;
+    }
+    .eventText{
+        font-size: 2em;
+        font-weight: 600;
+    }
+    .event p{
+        font-size: 1.25em;
+    }
+    .eventGallery{
+        width: 90vw;
+    }
+    .eventGallery img{
+        width: 33%;
+        height: 47%;
+    }
+    #eG1 img{
+        height: 80%;
+        width: 60%;
+    }
+    #eG3 img{
+        height: 48%;
+        width: 60%;
+    }
+    #eG2 img{
+        height: 95%;
+        width: 60%;
+    }
+    .fablab{
+        background-size: 150vw 100vh;
+    }
+    .fababout{
+        width: 50vw;
+    }
+    .fababout p{
+        font-size: 1.20em;
+    }
+    .fabgallery{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 45vw;
+        height: 80vh;
+    }
+    .fabgallery img{
+        height: 37vh;
+        width: 20vw;
+        padding: 10px;
+        margin-left: 0;
+    }
+    .members{
+        background-size: 150vw 105vh;
+    }
+    .memberList{
+        padding-left: 5vw;
+    }
+    .member img{
+        height: 85px;
+        width: 85px;
+    }
+    .member p{
+        font-size: 1em;
+    }
+    .alumini{
+        background-size: 200vw 90vh;
+    }
+    .alumini p{
+        font-size: 1.7em;
+    }
+}
+@media only screen and (min-width: 769px) {
+    #navbar{
+        padding-left: 1vh;
+    }
+    .nav-closed{
+        height: 4vw;
+    }
+    .navlink-closed{
+        height: 4vw;
+        width: 4vw;
+    }
+    #logo{
+        display: block;
+        height: 3vw;
+        width: 3vw;
+        margin-right: 1vh;
+        margin-left: 0;
+    }
+    body{
+        font-size: 1.1vw;
+    }
+    #animText{
+        font-size: 2.75em;
+    }
+    #animText b{
+        font-size: 3em;
+    }
+    .navlink-closed{
+        width: 50vw;
+    }
+    #navlinks{
+        flex-direction: row;
+    }
+    .navlink-closed a:first-child {display: none; }
+    .navlink-closed a:not(:first-child) {display: block;}
+    #hMount{
+        width: 100vw;
+        bottom: 15vw;
+    }
+    #hSea{
+        width: 100vw;
+        height: 15vw;
+    }
+    #hBush{
+        height: 25vw;
+    }
+    .events{
+        background-size: 100vw 125vh;
+    }
+    .eventGallery{
+        width: 52vw;
+    }
+    .event p{
+        width: 39vw;
+        margin-left: 2vw;
+        margin-top: 5vh;
+        font-size: 1.4em;
+        height: fit-content;
+    }
+    .nButton{
+        margin-top: 1vh;
+    }
+    #gallery{
+        visibility: hidden;
+        margin-left: 60vw;
+    }
+    #eG1{
+        display: flex;
+    }
+    #eG1 img{
+        width: 80%;
+    }
+    #eG2 img{
+        width: 80%;
+    }
+    .fababout p{
+        font-size: 1.5em;
+    }
+    .fablab{
+        background-size: 100vw 100vh;
+    }
+    .members{
+        background-size: 100vw 105vh;
+    }
+    .member p{
+        font-size: 1.25em;
+    }
+    .alumini{
+        background-size: 100vw 90vh;
+    }
+    .alumini p{
+        font-size: 2em;
+    }
+    .memberList{
+        margin-left: 8vw;
+        margin-bottom: 4vw;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    body{
+        font-size: 0.7vw;
+    }
+    #animText{
+        font-size: 3.5em;
+    }
+    #animText b{
+        font-size: 3.75em;
+    }
+    #sky{
+        width: 80vw;
+        top: 0;
+        left: 10vw;
+    }
+    #hMount{
+        bottom: 10vw;
+    }
+    #hSea{
+        height: 10vw;
+    }
+    #hBush{
+        height: 20vw;
+    }
+    #hTower{
+        height: 47vh;
+        right: 37vw;
+    }
+    #hRocket{
+        bottom: 1vh;
+        height: 35vh;
+    }
+    .nButton{
+        height: 40px;
+        width: 40px;
+    }
+    #eG2 img{
+        height: 80%;
+        width: 60%;
+    }
+    .fababout p,.event p{
+        font-size: 1.4em;
+        line-height: 2em;
+    }
+    .fabgallery img{
+        width: 14vw;
+    }
+    .hid{
+        display: block;
+    }
+    .alumini p{
+        font-size: 3em;
+    }
+    .member p{
+        font-size: 1.3em;
+    }
+    .member img{
+        height: 13vh;
+        width: 13vh;
+    }
+    .memberList{
+        margin-left: 10vw;
+        margin-bottom: 5vw;
+    }
+    .eventGallery{
+        width: 40vw;
+        height: 80vh;
+    }
+    .eventGallery img{
+        width: 45%;
+        height: 35%;
+        border: 2px solid #eeeeee30;
+        padding: 10px;
+    }
+    .event p{
+        width: 39vw;
+        margin-left: 2vw;
+        margin-top: 5vh;
+        font-size: 1.4em;
+        height: fit-content;
+    }
+    .event{
+        height: 70vh;
+        padding-left: 3.5vw;
+        padding-top: 5vh;
+    }
+}
+
+
