@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <title>IEDC - MACE</title>
-    <link rel="shortcut icon" type="image/png" href="./files/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="./files/logo.png" />
 </head>
+
 <body>
 
     <div class="nav-closed" id="navbar">
@@ -14,7 +16,7 @@
         <text>IEDC - MACE</text>
         <div id="navlinks" class="navlink-closed">
             <a href="javascript:void(0);" onclick="toggleNav()" class="Bnav"><i class="fas fa-bars"></i></a>
-            <a href="#events" onclick="scrl('.events')"  id="nbl" class="nav">Events</a>
+            <a href="#events" onclick="scrl('.events')" id="nbl" class="nav">Events</a>
             <a href="#fablab" onclick="scrl('.fablab')" class="nav">FabLab</a>
             <a href="#members" onclick="scrl('.members')" class="nav">Members</a>
             <a href="#thankYou" onclick="scrl('.alumini')" class="nav">Alumini</a>
@@ -26,36 +28,75 @@
 
 
     <div class="hero">
-        
+
         <div class="background">
-            
-            <svg id="sky" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="500" viewBox="0 0 1920 500">
+
+            <svg id="sky" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="500"
+                viewBox="0 0 1920 500">
                 <defs>
-                <style>
-                .a{opacity:0.8;fill:url(#a);}.b{fill:#cbcbcb;}.c{fill:#6c63ff;}.d{fill:#e6e6e6;transform-origin: 5px 5px;}
-                </style>
-                <linearGradient id="a" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-                <stop offset="0" stop-color="#fff"/>
-                <stop offset="1" stop-color="#fff" stop-opacity="0.302"/>
-                </linearGradient>
+                    <style>
+                        .a {
+                            opacity: 0.8;
+                            fill: url(#a);
+                        }
+
+                        .b {
+                            fill: #cbcbcb;
+                        }
+
+                        .c {
+                            fill: #6c63ff;
+                        }
+
+                        .d {
+                            fill: #e6e6e6;
+                            transform-origin: 5px 5px;
+                        }
+                    </style>
+                    <linearGradient id="a" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+                        <stop offset="0" stop-color="#fff" />
+                        <stop offset="1" stop-color="#fff" stop-opacity="0.302" />
+                    </linearGradient>
                 </defs>
                 <g transform="translate(-172 -100)">
-                <path class="a" d="M635.7,551.87l47.44-55.536L730.575,440.8l26.78-31.351c1.482-1.735-.8-4.441-2.286-2.706L707.63,462.276l-47.439,55.537-26.78,31.351c-1.482,1.735.8,4.441,2.286,2.706Z" transform="translate(613.643 -93.037)"/>
-                <circle class="b" cx="10.929" cy="10.929" r="10.929" transform="translate(1119.728 266.118)"/>
-                <circle class="b" cx="10.929" cy="10.929" r="10.929" transform="translate(582.974 391.727)"/>
-                <circle class="c" cx="5.146" cy="5.146" r="5.146" transform="translate(945.159 504.684)"/>
-                <path class="d" d="M285.1,401.1l-2.568,2.551-2.551-2.568-1.712,1.7,2.551,2.568-2.568,2.551,1.7,1.712,2.568-2.551,2.551,2.568,1.712-1.7-2.551-2.568,2.568-2.551Z" transform="translate(-106.334 -200.384)"/>
-                <path class="d" d="M299.407,297.38l-2.568,2.551-2.551-2.568-1.712,1.7,2.551,2.568-2.568,2.551,1.7,1.712,2.568-2.551,2.551,2.568,1.712-1.7-2.551-2.568,2.568-2.551Z" transform="translate(799.441 157.696)"/>
-                <path class="d" d="M567.7,178.285c-5.557,3.7-11.244-5.11-5.58-8.648C567.671,165.936,573.359,174.747,567.7,178.285Z" transform="translate(617.214 -10.242)"/>
-                <path class="d" d="M121.59,368.2l-3.535-.776.774-3.537-2.357-.517-.776,3.537-3.535-.774-.517,2.357,3.535.776-.774,3.535,2.357.517.776-3.537,3.535.776Z" transform="translate(508.806 204.83)"/>
-                <path class="d" d="M497.59,73.2l-3.535-.776.774-3.537-2.357-.517-.776,3.537-3.535-.774-.517,2.357,3.535.776-.774,3.535,2.357.517.776-3.537,3.535.776Z" transform="translate(1007.632 35.364)"/>
-                <path class="d" d="M689.59,232.2l-3.535-.776.774-3.537-2.357-.517-.776,3.537-3.535-.774-.517,2.357,3.535.776-.774,3.535,2.357.517.776-3.537,3.535.776Z" transform="translate(1373.997 109.787)"/>
-                <path class="d" d="M225.494,111.978l-3.535-.776.774-3.535-2.357-.517-.776,3.535-3.537-.774-.517,2.357,3.537.776-.774,3.537,2.357.515.776-3.535,3.535.774Z" transform="translate(360.294 19.381)"/>
-                <circle class="c" cx="5.146" cy="5.146" r="5.146" transform="translate(1963.08 146.507)"/>
-                <path class="d" d="M431.59,244.2l-3.535-.776.774-3.537-2.357-.517-.776,3.537-3.535-.774-.517,2.357,3.535.776-.774,3.535,2.357.517.776-3.537,3.535.776Z" transform="translate(1100.312 62.694)"/>
-                <path class="d" d="M526.494,199.978l-3.535-.776.774-3.535-2.357-.517-.776,3.535-3.537-.774-.517,2.357,3.537.776-.774,3.537,2.357.515.776-3.535,3.535.774Z" transform="translate(1565.425 -117.002)"/>
-                <path class="a" d="M581.7,337.87l47.44-55.536L676.575,226.8l26.78-31.351c1.482-1.735-.8-4.441-2.287-2.706L653.63,248.276l-47.439,55.537-26.78,31.351c-1.482,1.735.8,4.441,2.287,2.706Z" transform="translate(229.412 -95.958)"/>
-                <circle class="b" cx="24.981" cy="24.981" r="24.981" transform="translate(1371.071 127)"/>
+                    <path class="a"
+                        d="M635.7,551.87l47.44-55.536L730.575,440.8l26.78-31.351c1.482-1.735-.8-4.441-2.286-2.706L707.63,462.276l-47.439,55.537-26.78,31.351c-1.482,1.735.8,4.441,2.286,2.706Z"
+                        transform="translate(613.643 -93.037)" />
+                    <circle class="b" cx="10.929" cy="10.929" r="10.929" transform="translate(1119.728 266.118)" />
+                    <circle class="b" cx="10.929" cy="10.929" r="10.929" transform="translate(582.974 391.727)" />
+                    <circle class="c" cx="5.146" cy="5.146" r="5.146" transform="translate(945.159 504.684)" />
+                    <path class="d"
+                        d="M285.1,401.1l-2.568,2.551-2.551-2.568-1.712,1.7,2.551,2.568-2.568,2.551,1.7,1.712,2.568-2.551,2.551,2.568,1.712-1.7-2.551-2.568,2.568-2.551Z"
+                        transform="translate(-106.334 -200.384)" />
+                    <path class="d"
+                        d="M299.407,297.38l-2.568,2.551-2.551-2.568-1.712,1.7,2.551,2.568-2.568,2.551,1.7,1.712,2.568-2.551,2.551,2.568,1.712-1.7-2.551-2.568,2.568-2.551Z"
+                        transform="translate(799.441 157.696)" />
+                    <path class="d"
+                        d="M567.7,178.285c-5.557,3.7-11.244-5.11-5.58-8.648C567.671,165.936,573.359,174.747,567.7,178.285Z"
+                        transform="translate(617.214 -10.242)" />
+                    <path class="d"
+                        d="M121.59,368.2l-3.535-.776.774-3.537-2.357-.517-.776,3.537-3.535-.774-.517,2.357,3.535.776-.774,3.535,2.357.517.776-3.537,3.535.776Z"
+                        transform="translate(508.806 204.83)" />
+                    <path class="d"
+                        d="M497.59,73.2l-3.535-.776.774-3.537-2.357-.517-.776,3.537-3.535-.774-.517,2.357,3.535.776-.774,3.535,2.357.517.776-3.537,3.535.776Z"
+                        transform="translate(1007.632 35.364)" />
+                    <path class="d"
+                        d="M689.59,232.2l-3.535-.776.774-3.537-2.357-.517-.776,3.537-3.535-.774-.517,2.357,3.535.776-.774,3.535,2.357.517.776-3.537,3.535.776Z"
+                        transform="translate(1373.997 109.787)" />
+                    <path class="d"
+                        d="M225.494,111.978l-3.535-.776.774-3.535-2.357-.517-.776,3.535-3.537-.774-.517,2.357,3.537.776-.774,3.537,2.357.515.776-3.535,3.535.774Z"
+                        transform="translate(360.294 19.381)" />
+                    <circle class="c" cx="5.146" cy="5.146" r="5.146" transform="translate(1963.08 146.507)" />
+                    <path class="d"
+                        d="M431.59,244.2l-3.535-.776.774-3.537-2.357-.517-.776,3.537-3.535-.774-.517,2.357,3.535.776-.774,3.535,2.357.517.776-3.537,3.535.776Z"
+                        transform="translate(1100.312 62.694)" />
+                    <path class="d"
+                        d="M526.494,199.978l-3.535-.776.774-3.535-2.357-.517-.776,3.535-3.537-.774-.517,2.357,3.537.776-.774,3.537,2.357.515.776-3.535,3.535.774Z"
+                        transform="translate(1565.425 -117.002)" />
+                    <path class="a"
+                        d="M581.7,337.87l47.44-55.536L676.575,226.8l26.78-31.351c1.482-1.735-.8-4.441-2.287-2.706L653.63,248.276l-47.439,55.537-26.78,31.351c-1.482,1.735.8,4.441,2.287,2.706Z"
+                        transform="translate(229.412 -95.958)" />
+                    <circle class="b" cx="24.981" cy="24.981" r="24.981" transform="translate(1371.071 127)" />
                 </g>
             </svg>
 
@@ -66,22 +107,30 @@
             <img id="hBush" class="parallax" data-depth='0.2' src="./files/Path_26.png" alt="" srcset="">
             <img id="hOverlay" src="./files/Overlay.png" alt="" srcset="">
         </div>
-        
+
         <div class="heroText">
             <text id="animText" class="parallax" data-depth='-0.5'>The Appliance <br> Of <br> <b>Innovation</b> </text>
-            <img id="hRocket" class="parallax" data-depth='0.9' src="./files/Group_6.png" alt="" srcset=""><img id="hRocket" class="parallax" data-depth='0.9' src="./files/Group_6.png" alt="" srcset="">
+            <img id="hRocket" class="parallax" data-depth='0.9' src="./files/Group_6.png" alt="" srcset=""><img
+                id="hRocket" class="parallax" data-depth='0.9' src="./files/Group_6.png" alt="" srcset="">
         </div>
 
     </div>
 
     <div class="events">
+        <div>
+            <a href="https://bit.ly/IEDC-21-22"> <button class="my-button">Mark Your Presence</button></a>
+
+        </div>
 
 
         <div class="eventName">
 
             <div class="progressBar">
                 <text id="eNumber">01</text>
-                <text><hr><hr id="progress"></text>
+                <text>
+                    <hr>
+                    <hr id="progress">
+                </text>
                 <text>03</text>
             </div>
 
@@ -90,20 +139,24 @@
                 <text class="eventText" id="eN2">Channel I'm</text>
                 <text class="eventText" id="eN3">Mobile Charging</text>
             </div>
-            
+
         </div>
 
         <div class="event">
 
             <div class="eventGallery" id="eG1">
-                    <img src="./files/events/event1.jpeg" alt="" srcset="">
+                <img src="./files/events/event1.jpeg" alt="" srcset="">
             </div>
             <p id="eP1" class="eP">
 
-                <b>We are here to boost your spunky minds with  another business pitch event -  TORQUE</b><br><br> 
-               We are aiming to create a magnificent event with   entrepreneurs talks and competition. 
-               Torque allows  to ignite the entrepreneur in you through different rounds, in which first is ppt presentation.  Round 2 is  prototype presentation. It can be a physical item, if it's software, the UI will do or if your idea doesn't include either, promotional material like posters and all will do. Submit a video explaining this along with it.
-               In  round 3, there will be live pitch and crisis management. You are supposed to submit a final report with some legitimate customer reviews. 
+                <b>We are here to boost your spunky minds with another business pitch event - TORQUE</b><br><br>
+                We are aiming to create a magnificent event with entrepreneurs talks and competition.
+                Torque allows to ignite the entrepreneur in you through different rounds, in which first is ppt
+                presentation. Round 2 is prototype presentation. It can be a physical item, if it's software, the UI
+                will do or if your idea doesn't include either, promotional material like posters and all will do.
+                Submit a video explaining this along with it.
+                In round 3, there will be live pitch and crisis management. You are supposed to submit a final report
+                with some legitimate customer reviews.
 
                 Prizes worth 8k waiting for you!
                 Register here: <a href="http://torque.macehub.in">http://torque.macehub.in</a>
@@ -114,35 +167,35 @@
             </div>
             <p id="eP2" class="eP">
                 <b> We conducted this event with an aim to celebrate disruptions and innovations in the start
-                 ups.</b><br><br> We launched a massive campus program targeting South India, "I AM STARTUP
-                 STUDIO" with an aim to create campus ambassadors through an innovative campus learning
-                 program. This program was conducted with the support of Kerala StartUp Mission to
-                 promote entrepreneurship and Maker village, largest electronic incubator in the state. This
-                 was a South Indian students network campaign to nurture entrepreneurship. As a first step,
-                 we started 1 AM Startup Studio in the selected Campus, and trained the selected
-                 Ambassadors to report campus innovations and startup stories through channeliam.com ! This
-                 was the first time that media aired stories directly from campuses and the main highlight of
-                 the event was that students got the opportunity to report the innovations through our platform
-                 ! We had an audience base of 5 Million from the area of future business leaders, founders,
-                 CEO's and higher Government officials. Entrepreneurs shared their success story to inspire
-                 students and it was a great boost up for all IEDCs in the state.
-             </p>
+                    ups.</b><br><br> We launched a massive campus program targeting South India, "I AM STARTUP
+                STUDIO" with an aim to create campus ambassadors through an innovative campus learning
+                program. This program was conducted with the support of Kerala StartUp Mission to
+                promote entrepreneurship and Maker village, largest electronic incubator in the state. This
+                was a South Indian students network campaign to nurture entrepreneurship. As a first step,
+                we started 1 AM Startup Studio in the selected Campus, and trained the selected
+                Ambassadors to report campus innovations and startup stories through channeliam.com ! This
+                was the first time that media aired stories directly from campuses and the main highlight of
+                the event was that students got the opportunity to report the innovations through our platform
+                ! We had an audience base of 5 Million from the area of future business leaders, founders,
+                CEO's and higher Government officials. Entrepreneurs shared their success story to inspire
+                students and it was a great boost up for all IEDCs in the state.
+            </p>
             <div class="eventGallery" id="eG3">
                 <img src="./files/events/m1.jpeg" alt="" srcset="">
                 <img src="./files/events/m2.jpeg" alt="" srcset="">
             </div>
-             <p id="eP3" class="eP">
-                 <br>
-                 <b>2019 created a stressful flood, which inundated so many houses, stores and factories in
-                 kerala</b><br> It was a mind boggling situation. It devastated so many towns and cities. In somany
-                 areas, electricity was washed away by the tremendous power of water. Somany were isolated
-                 in different areas and they find it difficult to contact others. Lives were lost due to lack of
-                 communication. In this hard time IEDC and IEEE MACE SB decided to extend our helping
-                 hands to the flood affected areas. We tried to create humanity in technology. We developed
-                 and provided solar powered mobile charging units to flood affected areas of Wayanad and
-                 Nilambur. It was developed and fabricated at MACE fablab and delivered the same to the
-                 required areas. This incident made IEDC remarkable.
-             </p>
+            <p id="eP3" class="eP">
+                <br>
+                <b>2019 created a stressful flood, which inundated so many houses, stores and factories in
+                    kerala</b><br> It was a mind boggling situation. It devastated so many towns and cities. In somany
+                areas, electricity was washed away by the tremendous power of water. Somany were isolated
+                in different areas and they find it difficult to contact others. Lives were lost due to lack of
+                communication. In this hard time IEDC and IEEE MACE SB decided to extend our helping
+                hands to the flood affected areas. We tried to create humanity in technology. We developed
+                and provided solar powered mobile charging units to flood affected areas of Wayanad and
+                Nilambur. It was developed and fabricated at MACE fablab and delivered the same to the
+                required areas. This incident made IEDC remarkable.
+            </p>
         </div>
         <button class="nButton" id="gallery" onclick="showImg()"><i class="fas fa-images fa-lg"></i></button>
         <button class="nButton" onclick="preEvent()"><i class="fas fa-chevron-left"></i></button>
@@ -181,91 +234,134 @@
     <div class="members">
         <div class="memberAbout">
             <text class="eventText">Meet Our Team</text>
-            <button class="nButton" onclick="preMember()"><i class="fas fa-chevron-left"></i></button><text id="mNum">01</text><text>/02</text><button class="nButton" onclick="nextMember()"><i class="fas fa-chevron-right"></i></button>
+            <button class="nButton" onclick="preMember()"><i class="fas fa-chevron-left"></i></button><text
+                id="mNum">01</text><text>/02</text><button class="nButton" onclick="nextMember()"><i
+                    class="fas fa-chevron-right"></i></button>
         </div>
         <div class="memberList m1">
 
 
             <div class="member">
-                <img src="./files/members/Kiran_Johns_CEO.jpg" alt="" srcset="">
-                <p><b>Kiran Johns</b><br> CHIEF EXECUTIVE  OFFICER </p>
+                <img src="./files/execom/sohail.jpg" alt="" srcset="">
+                <p><b>Sohail PM</b><br> CHIEF EXECUTIVE OFFICER </p>
             </div>
 
             <div class="member">
-                <img src="./files/members/Amritha_P_M_Women_Entrepreneurship.jpg" alt="" srcset="">
-                <p><b>Amritha P M</b><br> WOMEN ENTREPRENEURSHIP </p>
+                <img src="./files/execom/shahzad.jpg" alt="" srcset="">
+                <p><b>Mohammed shahzad Abdul Salam</b><br> CHIEF OPERATING OFFICER </p>
             </div>
 
             <div class="member">
-                <img src="./files/members/Merin_Mary_Josy_Chief_Creative_Officer.jpg" alt="" srcset="">
-                <p><b>Merin Mary Josy</b><br> CHIEF CREATIVE OFFICER </p>
+                <img src="./files/execom/shinjushaji.jpg" alt="" srcset="">
+                <p><b>Shinju Shaji</b><br> CHIEF CREATIVE OFFICER </p>
             </div>
 
             <div class="member">
-                <img src="./files/members/Aslaha_Ali_Content_Creator.jpg" alt="" srcset="">
-                <p><b>Aslaha Ali</b><br> CONTENT CREATOR </p>
+                <img src="./files/execom/nattazha.jpg" alt="" srcset="">
+                <p><b>Nattazha Teresa Kurian</b><br> WOMEn IN ENTREPRENEURSHIP </p>
             </div>
+            <div class="member">
+                <img src="./files/execom/fretiz.jpg" alt="" srcset="">
+                <p><b>Fretiz Paul Renaison </b><br> CHIEF TECHNOLOGY OFFICER </p>
+            </div>
+
+
+
 
         </div>
         <div class="memberList m1">
 
-
             <div class="member">
-                <img src="./files/members/Manu_Francis_Chief_Operations_Officer.png" alt="" srcset="">
-                <p><b>Manu Francis</b><br> CHIEF OPERATIONS OFFICER </p>
+                <img src="./files/execom/arun.jpg" alt="" srcset="">
+                <p><b>Arun P</b><br> CHIEF MARKETING OFFICER </p>
             </div>
 
             <div class="member">
-                <img src="./files/members/Michelle Jacob_Chief_Markting_Officer.jpg" alt="" srcset="">
-                <p><b>Michelle Jacob</b><br> CHIEF MARKETING OFFICER </p>
+                <img src="./files/execom/jawhara.jpg" alt="" srcset="">
+                <p><b>JAWHARA FATHIMA</b><br> COMMUNITY MANAGER </p>
             </div>
 
             <div class="member">
-                <img src="./files/members/Aneesa_PS_Community_Developer.jpg" alt="" srcset="">
-                <p><b>Aneesa P S</b><br> COMMUNITY DEVOLOPER </p>
+                <img src="./files/execom/sreeranjini.jpg" alt="" srcset="">
+                <p><b>Sreeranjini P</b><br> WOMEN IN ENTREPRENEURSHIP </p>
             </div>
-
             <div class="member">
-                <img src="./files/members/Arunima_Jayan_A_Chief_Social_Officer.jpg" alt="" srcset="">
-                <p><b>Arunima Jayan A</b><br> CHIEF SOCIAL OFFICER </p>
+                <img src="./files/execom/Edwin Thomas.jpg" alt="" srcset="">
+                <p><b>Edwin Thomas</b><br> CHIEF FINANCIAL OFFICER </p>
+            </div>
+            <div class="member">
+                <img src="./files/execom/TOBY.jpg" alt="" srcset="">
+                <p><b>Toby Pradeep Sramipickal</b><br> COMMUNITY MANAGER </p>
             </div>
 
-            
 
         </div>
 
         <div class="memberList m2">
+
             <div class="member">
-                <img src="./files/members/Muhammed_Aslam_Webmaster_Technical_Lead.jpg" alt="" srcset="">
-                <p><b>Muhammed Aslam</b><br> WEBMASTER/TECHNICAL LEAD </p>
+                <img src="./files/execom/michelle.jpg" alt="" srcset="">
+                <p><b>Michelle Rose Dominic</b><br>EDITOR IN CHIEF</p>
             </div>
             <div class="member">
-                <img src="./files/members/Sohail_PM_Chief_Financial_Officer.JPG" alt="" srcset="">
-                <p><b>Sohail PM</b><br> CHIEF FINANCIAL OFFICER </p>
+                <img src="./files/execom/basima.jpg" alt="" srcset="">
+                <p><b>Basima Salim</b><br>PUBLIC RELATIONS OFFICER</p>
             </div>
             <div class="member">
-                <img src="./files/members/Leo_Micheal_Joy_Design_Lead.png" alt="" srcset="">
-                <p><b>Leo Micheal Joy</b><br>DESIGN LEAD</p>
+                <img src="./files/execom/mizaj.jpg" alt="" srcset="">
+                <p><b>Mizaj M</b><br>CHIEF GROWTH OFFICER</p>
             </div>
+            <div class="member">
+                <img src="./files/execom/navaneeth.jpg" alt="" srcset="">
+                <p><b>Navaneeth Prabha/b><br>CHIEF SOCIAL OFFICER</p>
+            </div>
+            <div class="member">
+                <img src="./files/execom/shabnam.jpg" alt="" srcset="">
+                <p><b>Shabnam PA</b><br>TECH LEAD</p>
+            </div>
+
+
         </div>
         <div class="memberList m2">
+
             <div class="member">
-                <img src="./files/members/Nihal_Shaji_Chief_Technology_Officer.jpg" alt="" srcset="">
-                <p><b>Nihal Shaji</b><br> CHIEF TECHNOLOGY OFFICER</p>
+                <img src="./files/execom/devadarshan.jpg" alt="" srcset="">
+                <p><b>Deva Darsan</b><br>DESIGN LEAD</p>
             </div>
             <div class="member">
-                <img src="./files/members/Sujeeth_B_Design_Lead.jpg" alt="" srcset="">
-                <p><b>Sujeeth B</b><br>DESIGN LEAD</p>
+                <img src="./files/execom/rohit.jpg" alt="" srcset="">
+                <p><b>Rohit B</b><br>DESIGN LEAD</p>
             </div>
+            <div class="member">
+                <img src="./files/execom/Abhinav Unnikrishnan.jpg" alt="" srcset="">
+                <p><b>Abhinav Unnikrishnan</b><br>OPERATIONS TEAM</p>
+            </div>
+            <div class="member">
+                <img src="./files/execom/niya nasrin.jpg" alt="" srcset="">
+                <p><b>Niya Nazrin</b><br>OPERATIONS TEAM</p>
+            </div>
+            <div class="member">
+                <img src="./files/execom/dheeraj.jpg" alt="" srcset="">
+                <p><b>Dheeraj Nalapat</b><br>OPERATIONS TEAM</p>
+            </div>
+            <div class="member">
+                <img src="./files/execom/athira.jpg" alt="" srcset="">
+                <p><b>Athira</b><br>OPERATIONS TEAM</p>
+            </div>
+
+
         </div>
+        
     </div>
 
     <div class="alumini">
-        <p>Students are provided with ample amount of opportunities <br> to connect and to be mentored by a treasure trove of alumnis <br> dating back from 1960's who are heading many of the global MNC's</p>
+        <p>Students are provided with ample amount of opportunities <br> to connect and to be mentored by a treasure
+            trove of alumnis <br> dating back from 1960's who are heading many of the global MNC's</p>
     </div>
 
     <div class="footer">
-        <a href="https://www.instagram.com/iedc_mace/?hl=en" target="_blank" class="fab fa-instagram fa-lg" style="margin-left: 0;"></a>
+        <a href="https://www.instagram.com/iedc_mace/?hl=en" target="_blank" class="fab fa-instagram fa-lg"
+            style="margin-left: 0;"></a>
         <a href="https://www.linkedin.com/company/iedc-mace" target="_blank" class="fab fa-linkedin-in fa-lg"></a>
         <a href="mailto:iedc@mace.ac.in" class="far fa-envelope fa-lg"></a>
     </div>
@@ -276,4 +372,5 @@
     <script src="https://kit.fontawesome.com/e3e1683b38.js" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
 </body>
+
 </html>

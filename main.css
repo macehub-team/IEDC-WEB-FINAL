@@ -227,6 +227,19 @@ p b{
     font-size: 1.2em;
     color: #cccccc;
 }
+.my-button{
+    margin-left: 43%;
+    border-radius: 9px;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 18px;background-color:#353155 ;
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+}
+.my-button:hover{
+
+background-color:#62606b;
+}
 
 .nButton{
     color: #F2F2F2;
@@ -334,10 +347,10 @@ p b{
 /*    -------   */
 .members{
     background-image: url(./files/memberbg.png);
-    background-size: 250vw 105vh;
+    background-size: 250vw 150vh;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 8fr;
 }
 .memberAbout{
@@ -367,7 +380,7 @@ p b{
 .member{
     display: flex;
     align-items: center;
-    height: 10vh;
+    height: 15vh;
     color: #a0a0a0;
 }
 .member img{
